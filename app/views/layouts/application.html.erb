@@ -4,12 +4,15 @@
     <title>Thespoon194</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
     <%= yield %>
+    <footer>
+      Made with 🚀 in Shanghai
+      <%= link_to "About", about_path %>
+      <%= link_to "Contact", contact_path  %>
+    </footer>
   </body>
 </html>
